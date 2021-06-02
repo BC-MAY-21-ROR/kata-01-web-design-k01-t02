@@ -1,0 +1,53 @@
+//Font import
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+//General box-sizing
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+//Colors
+$pink: hsl(322, 100%, 66%);
+$white: rgb(255,255,255);
+$very_pale_cyan: hsl(193, 100%, 96%);
+$very_dark_cyan: hsl(192, 100%, 9%);
+$grayish_blue: hsl(208, 11%, 55%);
+//box-shadow
+$box_shadow: 0px 0px 10px rgb(221, 217, 217);
+//Scales
+$font_size: 18px;
+$weight_700: 700;
+$weight_600: 600;
+$weight_400: 400;
+$image_scale: 90%;
+//Fonts
+$font_body: 'Open Sans', sans-serif;
+$font_head: 'Poppins', sans-serif;
+
+h1, h2{
+    font:{
+        family: $font_head;
+        weight: $weight_700;
+    }
+    color: $very_dark_cyan;
+}
+
+p{
+    font:{
+        family: $font_body;
+        size: $font-size;
+    }
+}
+
+//Button mixins
+@mixin btn($p1, $p2, $bg, $color, $w){
+    border: none;
+    box-shadow: $box_shadow;
+    border-radius: 20px;
+    padding: $p1 $p2;
+    background-color: $bg;
+    font-weight: $w;
+    margin: 10px;
+    font-family: $font_body;
+    color: $color;
+}
