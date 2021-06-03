@@ -1,0 +1,39 @@
+footer{
+    background-color: $very_dark_cyan;
+    color: $white;
+    padding:15px;
+    padding-top:150px;
+    svg{
+        filter: invert(100%) sepia(19%) saturate(318%) hue-rotate(269deg) brightness(120%) contrast(100%);
+    }
+    .column{
+        display: flex;
+        margin-top: 20px;
+        p{
+            margin-left: 15px;
+        }
+        img{
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+        };
+    }
+    .footer-nav{
+        margin-top: 50px;
+        ul li{
+            list-style: none;
+            margin-top: 15px;
+        }
+    }
+    .footer-end{
+        margin-top: 50px;
+        text-align: center;
+        .footer-icons i{
+            border: 1px solid $white;
+            padding: 5px;
+            border-radius: 50%; 
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+    }
+}

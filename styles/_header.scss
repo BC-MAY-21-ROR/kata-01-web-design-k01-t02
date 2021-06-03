@@ -7,12 +7,14 @@ header{
     nav{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         button{
-            @include btn(10px, 30px, $white, $very_dark_cyan, $weight_400);
+            @include btn(10px, 30px, $white, $very_dark_cyan, $weight_700);
+            height: 15px;
         }
         img{
-            width: 150px;
-            height: auto;   
+            width:120px;
+            height:20px;
         }
     }
 
@@ -24,9 +26,10 @@ header{
         
         img{
             width: $image_scale;
+            margin-top: 50px;
         }
         button{
-            @include btn(10px, 70px, $pink, $white, $weight_400);
+            @include btn(10px, 70px, $pink, $white, $weight_700);
         }
         p{
 

@@ -24,7 +24,7 @@ $image_scale: 90%;
 $font_body: 'Open Sans', sans-serif;
 $font_head: 'Poppins', sans-serif;
 
-h1, h2{
+h1, h2, h3{
     font:{
         family: $font_head;
         weight: $weight_700;
@@ -32,11 +32,15 @@ h1, h2{
     color: $very_dark_cyan;
 }
 
-p{
+p, li{
     font:{
         family: $font_body;
         size: $font-size;
     }
+}
+button:hover{
+    opacity: 0.65;
+    cursor: pointer;
 }
 
 //Button mixins

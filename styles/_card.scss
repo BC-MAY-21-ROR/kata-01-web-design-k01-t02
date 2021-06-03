@@ -1,5 +1,4 @@
 .container{
-    
     width: 80%;
     margin: 0 auto;
     div{
@@ -17,5 +16,23 @@
         p{
             color: $grayish_blue;
         }
+    }
+}
+
+.question{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    background-color: $white;
+    box-shadow: $box_shadow;
+    text-align: center;
+    width: 90%;
+    position:relative;
+    top:100px;
+    button{
+        @include btn(10px, 70px, $pink, $white, $weight_700);
+        margin-top: 20px;
     }
 }
