@@ -36,4 +36,51 @@ footer{
             margin-left: 10px;
         }
     }
+    .copyright{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    footer{
+        margin-left: auto;
+        margin-right: auto;
+        svg{
+            margin-left: 35px;
+        }
+        .footer-container{
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 2fr 2fr 1fr;
+            
+        }
+        .footer-contact{
+            padding: 0 35px 0 35px;
+            align-self: start;
+            .column{
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+        }
+        .footer-nav{
+            align-self: start;
+            margin-top: 0px;
+            padding: 0 35px 0 35px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            ul li{
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+        }
+
+        .footer-end{
+            margin-top: 0px;
+            padding: 0 35px 0 35px;
+        }
+        .copyright{
+            text-align: end;
+            margin-right: 35px;
+        }
+    }
 }

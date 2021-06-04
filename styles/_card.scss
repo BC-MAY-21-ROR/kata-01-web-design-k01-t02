@@ -36,3 +36,31 @@
         margin-top: 20px;
     }
 }
+
+
+@media screen and (min-width: 1440px) {
+    .container div{
+        display: flex;
+        wrap: nowrap;
+        align-items: center;
+        img{
+            padding-left: 70px;
+            padding-right: 70px;
+            width: 45%;
+            height: auto;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .img-2{
+            order: 1;
+        }
+        article{
+            text-align: justify;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+    }
+    .question{
+        width: 50%;
+    }
+}

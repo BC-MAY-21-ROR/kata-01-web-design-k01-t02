@@ -93,6 +93,37 @@ header div p {
   color: #00252e;
 }
 
+@media screen and (min-width: 1440px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  header > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  header > div .header-card {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  header > div .header-card button {
+    margin-left: 0px;
+  }
+  header > div .header-img img {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -148,6 +179,39 @@ header div p {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1440px) {
+  .container div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container div img {
+    padding-left: 70px;
+    padding-right: 70px;
+    width: 45%;
+    height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .container div .img-2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .container div article {
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .question {
+    width: 50%;
+  }
+}
+
 footer {
   background-color: #00252e;
   color: white;
@@ -197,5 +261,58 @@ footer .footer-end .footer-icons i {
   border-radius: 50%;
   margin-bottom: 20px;
   margin-left: 10px;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer svg {
+    margin-left: 35px;
+  }
+  footer .footer-container {
+    margin-top: 25px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr 1fr;
+        grid-template-columns: 2fr 2fr 1fr;
+  }
+  footer .footer-contact {
+    padding: 0 35px 0 35px;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  footer .footer-contact .column {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  footer .footer-nav {
+    -ms-grid-row-align: start;
+        align-self: start;
+    margin-top: 0px;
+    padding: 0 35px 0 35px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  footer .footer-nav ul li {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  footer .footer-end {
+    margin-top: 0px;
+    padding: 0 35px 0 35px;
+  }
+  footer .copyright {
+    text-align: end;
+    margin-right: 35px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

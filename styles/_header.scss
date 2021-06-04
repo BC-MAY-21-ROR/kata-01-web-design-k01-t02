@@ -38,3 +38,27 @@ header{
     }
 }
 
+@media screen and (min-width: 1440px){
+    header{
+        display:flex;
+        flex-direction:column;
+        text-align: left;
+        >div{
+            display:grid;
+            grid-template-columns: 50% 50%;
+            .header-card{
+                align-self:center;
+                button{
+                    margin-left:0px;
+                }
+            }
+            .header-img{
+                img{
+                    margin-top: 0px;
+                    margin-left: 20px;
+                }
+
+            } 
+        }
+    }
+}
